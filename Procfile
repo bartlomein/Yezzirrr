@@ -1,2 +1,1 @@
-web: gunicorn app:yezzir
-web: gunicorn run:yezzir
+web: gunicorn app:my_awesome_app
