@@ -3,6 +3,7 @@ from random import randint
 import markovify
 import pronouncing
 import sys
+import json
 
 
 with open("rap.txt") as f:
@@ -77,4 +78,4 @@ def mainFunction(inputSentence):
     old = fourth_sentence_no_rhyme.rsplit(' ', 1)[0]
     new = old + " " + random_word2
 
-    return inputSentence.strip('.') + "\n" + new_second.strip('.') + "\n" + third_sentence.strip('.') + "\n" + new.strip('.')
+    return json.dumps({"1": inputSentence.strip('.'), "2": new_second.strip('.'), "3": third_sentence.strip('.'), "4": new.strip('.')})
