@@ -6,3 +6,7 @@ app = Flask(__name__)
 @app.route("/api/rap/<phrase>")
 def hello(phrase):
     return mainFunction(phrase)
+
+
+if __name__ == '__main__':
+    yezzir.run()
