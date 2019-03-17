@@ -14,9 +14,9 @@ def hello(phrase):
     return mainFunction(phrase)
 
 
-@app.route("/api/poetry/<number>")
-def poetry(phrase):
-    return poetryFunction(number)
+@app.route("/api/poetry/<lines>")
+def poetry(lines):
+    return poetryFunction(lines)
 
 
 if __name__ == '__main__':
