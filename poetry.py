@@ -6,7 +6,7 @@ import sys
 import json
 
 
-with open("poetry.txt") as f:
+with open("newPoetry.txt") as f:
     text = f.read()
 dic = pyphen.Pyphen(lang='en')
 
