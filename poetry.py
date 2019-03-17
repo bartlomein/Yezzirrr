@@ -38,10 +38,10 @@ def poetryFunction(number):
     fourteenth_sentence = text_model.make_short_sentence(90)
 
     if number == "4":
-        return json.dumps({"1": first_sentence, "2": second_sentence, "3": third_sentence, "4": fourth_sentence})
+        return json.dumps({[first_sentence, second_sentence,  third_sentence,  fourth_sentence]})
 
     elif number == "8":
-        return json.dumps({"1": first_sentence, "2": second_sentence, "3": third_sentence, "4": fourth_sentence, "5": fifth_sentence, "6": sixth_sentence, "7": seventh_sentence, "8": eight_sentence})
+        return json.dumps({[first_sentence, second_sentence,  third_sentence, fourth_sentence, fifth_sentence,  sixth_sentence,  seventh_sentence,  eight_sentence]})
 
     else:
-        return json.dumps({"1": first_sentence, "2": second_sentence, "3": third_sentence, "4": fourth_sentence, "5": fifth_sentence, "6": sixth_sentence, "7": seventh_sentence, "8": eight_sentence, "9": ninth_sentence, "10": tenth_sentence, "11": eleventh_sentence, "12": twelth_sentence, "13": thirtheenth_sentence, "14": fourteenth_sentence})
+        return json.dumps({[first_sentence,  second_sentence,  third_sentence,  fourth_sentence,  fifth_sentence,  sixth_sentence, seventh_sentence,  eight_sentence, ninth_sentence,  tenth_sentence, eleventh_sentence,  twelth_sentence,  thirtheenth_sentence, fourteenth_sentence]})
