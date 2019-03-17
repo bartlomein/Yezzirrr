@@ -3,3 +3,4 @@ pyphen
 markovify
 pronouncing
 gunicorn
+flask_cors
