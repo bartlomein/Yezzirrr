@@ -37,10 +37,10 @@ def poetryFunction(number):
     thirtheenth_sentence = text_model.make_short_sentence(90)
     fourteenth_sentence = text_model.make_short_sentence(90)
 
-    if number == 4:
+    if number == "4":
         return json.dumps({"1": first_sentence, "2": second_sentence, "3": third_sentence, "4": fourth_sentence})
 
-    elif number == 8:
+    elif number == "8":
         return json.dumps({"1": first_sentence, "2": second_sentence, "3": third_sentence, "4": fourth_sentence, "5": fifth_sentence, "6": sixth_sentence, "7": seventh_sentence, "8": eight_sentence})
 
     else:
