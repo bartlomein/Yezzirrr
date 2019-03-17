@@ -1,4 +1,5 @@
-from bot import mainFunction
+from rap import mainFunction
+from poetry import poetryFunction
 from flask import Flask
 app = Flask(__name__)
 
@@ -11,6 +12,11 @@ def hello_world():
 @app.route("/api/rap/<phrase>")
 def hello(phrase):
     return mainFunction(phrase)
+
+
+@app.route("/api/poetry/<number>")
+def poetry(phrase):
+    return poetryFunction(number)
 
 
 if __name__ == '__main__':
