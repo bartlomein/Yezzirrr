@@ -44,4 +44,4 @@ def poetryFunction(number):
         return json.dumps({"poetry8": [first_sentence, second_sentence,  third_sentence, fourth_sentence, fifth_sentence,  sixth_sentence,  seventh_sentence,  eight_sentence]})
 
     else:
-        return json.dumps({"poetry12": [first_sentence,  second_sentence,  third_sentence,  fourth_sentence,  fifth_sentence,  sixth_sentence, seventh_sentence,  eight_sentence, ninth_sentence,  tenth_sentence, eleventh_sentence,  twelth_sentence,  thirtheenth_sentence, fourteenth_sentence]})
+        return json.dumps({"poetry14": [first_sentence,  second_sentence,  third_sentence,  fourth_sentence,  fifth_sentence,  sixth_sentence, seventh_sentence,  eight_sentence, ninth_sentence,  tenth_sentence, eleventh_sentence,  twelth_sentence,  thirtheenth_sentence, fourteenth_sentence]})
