@@ -21,7 +21,7 @@ def generate_model(cfdist, word, num=15):
 
 
 def poetryFunction(number):
-
+    title = text_model.make_short_sentence(10)
     first_sentence = text_model.make_short_sentence(90)
     second_sentence = text_model.make_short_sentence(90)
     third_sentence = text_model.make_short_sentence(90)
@@ -38,10 +38,10 @@ def poetryFunction(number):
     fourteenth_sentence = text_model.make_short_sentence(90)
 
     if number == "4":
-        return json.dumps({"poem": [first_sentence, second_sentence,  third_sentence,  fourth_sentence]})
+        return json.dumps({"title": [title], "poem": [first_sentence, second_sentence,  third_sentence,  fourth_sentence]})
 
     elif number == "8":
-        return json.dumps({"poem": [first_sentence, second_sentence,  third_sentence, fourth_sentence, fifth_sentence,  sixth_sentence,  seventh_sentence,  eight_sentence]})
+        return json.dumps({"title": [title], "poem": [first_sentence, second_sentence,  third_sentence, fourth_sentence, fifth_sentence,  sixth_sentence,  seventh_sentence,  eight_sentence]})
 
     else:
-        return json.dumps({"poem": [first_sentence,  second_sentence,  third_sentence,  fourth_sentence,  fifth_sentence,  sixth_sentence, seventh_sentence,  eight_sentence, ninth_sentence,  tenth_sentence, eleventh_sentence,  twelth_sentence,  thirtheenth_sentence, fourteenth_sentence]})
+        return json.dumps({"title": [title], "poem": [first_sentence,  second_sentence,  third_sentence,  fourth_sentence,  fifth_sentence,  sixth_sentence, seventh_sentence,  eight_sentence, ninth_sentence,  tenth_sentence, eleventh_sentence,  twelth_sentence,  thirtheenth_sentence, fourteenth_sentence]})
