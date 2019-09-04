@@ -21,7 +21,7 @@ def generate_model(cfdist, word, num=15):
 
 
 def poetryFunction(number):
-    title = text_model.make_short_sentence(30)
+    title = text_model.make_short_sentence(40)
     first_sentence = text_model.make_short_sentence(90)
     second_sentence = text_model.make_short_sentence(90)
     third_sentence = text_model.make_short_sentence(90)
